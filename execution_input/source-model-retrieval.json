@@ -1,0 +1,289 @@
+{
+  "schema_version": "1.0.0",
+  "status": "promoted-source-independently-verified",
+  "recorded_utc_date": "2026-08-30",
+  "artifact_class": "pinned upstream source representation; not a converted canonical BF16 GGUF artifact",
+  "repository": "mistralai/Mistral-7B-v0.3",
+  "revision": "caa1feb0e54d415e2df31207e5f4e273e33509b1",
+  "final_root": "F:\\quantization-path-dependence\\source\\model\\mistralai--Mistral-7B-v0.3\\caa1feb0e54d415e2df31207e5f4e273e33509b1\\files",
+  "allowlist": {
+    "path": "execution_input/source-model-allowlist.json",
+    "sha256": "2D5197FECD4947240E18DE5058FD9BB1E95B31EFBEF046A17607C0156BC3DC39",
+    "commit": "e132d0e188ad91f7594a8e216ae28913e0333029",
+    "tag": "source-model-allowlist-v1",
+    "release_id": 379366624,
+    "published_at": "2026-08-30T18:30:12Z"
+  },
+  "attempt_disposition": {
+    "attempt_id": "hf-mistral-caa1-20260830t1832z-a1",
+    "initial_tool": {
+      "tag": "source-retrieval-tool-v1",
+      "commit": "8ef6458ac6a1e851ee0c4d34d725663ee835757d",
+      "script_sha256": "3D11E01D85EE42A5BD1737D3CE7E1EECCFCA4980996438A191E52ABD1EF95AF8",
+      "disposition": "rejected and halted before promotion after audit found missing non-LFS Git-blob and safetensors index/header validation",
+      "halted_utc": "2026-08-30T18:39:05Z",
+      "preserved_partial_bytes": 3619641879
+    },
+    "corrected_tool": {
+      "tag": "source-retrieval-tool-v1.2",
+      "commit": "9d9cb4c9dfcae3202542013c3ea96d31767df582",
+      "tag_object": "fb7e2a063171d485a16c8366cd1d33a1a515197f",
+      "release_id": 379372662,
+      "published_at": "2026-08-30T18:55:37Z",
+      "retriever_sha256": "5A8944CBF365E14746B28A97EA20A673AC4DEC1B0CEEAE4AD01FAE27ABA880FD",
+      "validator_sha256": "997144A87786078598CC688519AE806456D861AE25F08982E21779695E663B1D",
+      "self_test_sha256": "387DF78FFE62937CD47B7E6B0D0E1D4C738E748D1E0E3F4477B1732703349BA9",
+      "adoption_was_explicit": true,
+      "adoption_switch": "-AdoptUnboundAttempt"
+    }
+  },
+  "retrieval_evidence": {
+    "started_utc": "2026-08-30T18:56:58.0371847Z",
+    "validated_utc": "2026-08-30T19:17:27.6141695Z",
+    "promotion_authorized_utc": "2026-08-30T19:17:27.6311894Z",
+    "finished_utc": "2026-08-30T19:17:27.6452001Z",
+    "completion_event_utc": "2026-08-30T19:17:27.6757114Z",
+    "binding_sha256": "2E50B3AB3E5D7030BBA7D5DF457B0B1433C3A307B1CD2469FA812756A38B76F9",
+    "event_log_sha256": "EDEF45830D51CC126C3F1B0A2AFC3D4B97431A3BE6DC6E0787DC7CA695AF08E3",
+    "validated_manifest_sha256": "F9890133A3B3933544DF793D0615E5139144BAD65B3E08C37E67367E9CC7A62C",
+    "promotion_receipt_sha256": "7D4731595B9AD0B1BDDC7DB02FB1350AFC954CD7D88FF88D76439D9705CEA01B",
+    "validator_stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "python_path": "C:\\Program Files\\Python311\\python.exe",
+    "python_sha256": "5F7B89A612C9B8AF1D6456CDFCD1DBE5CA630849E79AEBCED9BEE9A6694952EC",
+    "maximum_internal_curl_retries": 1,
+    "actual_internal_curl_retries": 0,
+    "event_log_line_count": 32,
+    "event_log_chronologically_ordered": true,
+    "download_finished_events": 9,
+    "preexisting_files_revalidated_under_v1_2": [
+      "config.json",
+      "generation_config.json"
+    ],
+    "nonempty_curl_stderr_records": 0,
+    "failure_events": 0,
+    "completion_events": 1,
+    "frozen_release_preceded_execution_seconds": 81.0371847,
+    "free_bytes_before": 646490996736,
+    "free_bytes_after": 635611779072,
+    "validated_before_promotion": true,
+    "exact_membership_rechecked_after_promotion": true
+  },
+  "source_summary": {
+    "selected_file_count": 11,
+    "selected_total_bytes": 14498795238,
+    "plain_files_only": true,
+    "subdirectories": 0,
+    "reparse_points": 0,
+    "unexpected_members": 0,
+    "model_config": {
+      "model_type": "mistral",
+      "architecture": "MistralForCausalLM",
+      "torch_dtype": "bfloat16",
+      "vocab_size": 32768,
+      "bos_token_id": 1,
+      "eos_token_id": 2,
+      "pad_token_id": null
+    },
+    "generation_config": {
+      "bos_token_id": 1,
+      "eos_token_id": 2
+    },
+    "license": {
+      "spdx": "Apache-2.0",
+      "evidence_path": "README.md",
+      "evidence_sha256": "D5F3BF07F3062380B2C26B22A5DC9D462D2A1417040F182775DE5102F10B2A28",
+      "evidence": "YAML model-card metadata contains license: apache-2.0"
+    }
+  },
+  "files": [
+    {
+      "path": "config.json",
+      "role": "model-config-required-by-converter",
+      "bytes": 601,
+      "sha256": "AFFAFC6478EC0FD07A32F0CA57AA2FC57743F4D17D6730F86A96AC24D1507F99",
+      "published_identity_kind": "git-blob-sha1",
+      "published_identity": "9f913dc05d66cfb23c16e3c93b3cc4899813dfa6",
+      "published_identity_matched": true
+    },
+    {
+      "path": "generation_config.json",
+      "role": "generation-metadata-read-by-gguf-metadata-loader",
+      "bytes": 116,
+      "sha256": "B4669F1B8F4185324BD9B12A69E85A1AD2289BC48111EF739CFAAEA3BBA6B0A9",
+      "published_identity_kind": "git-blob-sha1",
+      "published_identity": "b6bea2642bc3fe80f392111d52af91d1563a8de2",
+      "published_identity_matched": true
+    },
+    {
+      "path": "model-00001-of-00003.safetensors",
+      "role": "selected-weight-shard",
+      "bytes": 4949453792,
+      "sha256": "2D7DE8EB9BD554CCCC999649FD5A3A28A44D09042879D6C1CEDD13F59C86F7A8",
+      "published_identity_kind": "lfs-sha256",
+      "published_identity": "2D7DE8EB9BD554CCCC999649FD5A3A28A44D09042879D6C1CEDD13F59C86F7A8",
+      "published_identity_matched": true
+    },
+    {
+      "path": "model-00002-of-00003.safetensors",
+      "role": "selected-weight-shard",
+      "bytes": 4999819336,
+      "sha256": "79A5F871A0FBB7919F263D78CAFF0D4D3B7A1D444552DB3011ADA70F48FD5EE4",
+      "published_identity_kind": "lfs-sha256",
+      "published_identity": "79A5F871A0FBB7919F263D78CAFF0D4D3B7A1D444552DB3011ADA70F48FD5EE4",
+      "published_identity_matched": true
+    },
+    {
+      "path": "model-00003-of-00003.safetensors",
+      "role": "selected-weight-shard",
+      "bytes": 4546807800,
+      "sha256": "BA7AE59358F726F5F5BC5264FD8A3AEC907F42E6009D7B22454007D18723616A",
+      "published_identity_kind": "lfs-sha256",
+      "published_identity": "BA7AE59358F726F5F5BC5264FD8A3AEC907F42E6009D7B22454007D18723616A",
+      "published_identity_matched": true
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "role": "selected-weight-index-required-by-converter",
+      "bytes": 23950,
+      "sha256": "E489BA553B87CDE188D921B1A8283C2E0B9D33D635B88147D96FF0FCD6250016",
+      "published_identity_kind": "git-blob-sha1",
+      "published_identity": "050e5515d49376fc01e4837d031902c63af98111",
+      "published_identity_matched": true
+    },
+    {
+      "path": "README.md",
+      "role": "model-card-and-license-evidence",
+      "bytes": 3580,
+      "sha256": "D5F3BF07F3062380B2C26B22A5DC9D462D2A1417040F182775DE5102F10B2A28",
+      "published_identity_kind": "git-blob-sha1",
+      "published_identity": "61a50aa48eed669cccd4e2b2183f3c3daf9b81eb",
+      "published_identity_matched": true
+    },
+    {
+      "path": "special_tokens_map.json",
+      "role": "independent-special-token-verification",
+      "bytes": 414,
+      "sha256": "6FA06EFA2785E450051989A6F8FB4416B10149DED485DDD3F127A40734F5CFD0",
+      "published_identity_kind": "git-blob-sha1",
+      "published_identity": "451134b2ddc2e78555d1e857518c54b4bdc2e87d",
+      "published_identity_matched": true
+    },
+    {
+      "path": "tokenizer_config.json",
+      "role": "tokenizer-config-required-by-converter",
+      "bytes": 136697,
+      "sha256": "4B16EC9A87854359A282C521DA82655CF96C91F53184D14612AA37DEAC34378E",
+      "published_identity_kind": "git-blob-sha1",
+      "published_identity": "07992b5eb9617dbdf13bb69b825c45e0da5fddb2",
+      "published_identity_matched": true
+    },
+    {
+      "path": "tokenizer.json",
+      "role": "independent-tokenizer-and-postprocessor-verification",
+      "bytes": 1961548,
+      "sha256": "E553AF6FFF7D7AD76E830608B218C5C0B0822998D5A1A96099A74CD3C1CB1A49",
+      "published_identity_kind": "git-blob-sha1",
+      "published_identity": "8d7d23136b474a3df1182ed829db19984e295ee7",
+      "published_identity_matched": true
+    },
+    {
+      "path": "tokenizer.model",
+      "role": "sentencepiece-model-required-by-converter",
+      "bytes": 587404,
+      "sha256": "37F00374DEA48658EE8F5D0F21895B9BC55CB0103939607C8185BFD1C6CA1F89",
+      "published_identity_kind": "lfs-sha256",
+      "published_identity": "37F00374DEA48658EE8F5D0F21895B9BC55CB0103939607C8185BFD1C6CA1F89",
+      "published_identity_matched": true
+    }
+  ],
+  "safetensors_validation": {
+    "valid": true,
+    "index": "model.safetensors.index.json",
+    "index_total_size": 14496047104,
+    "tensor_count": 291,
+    "tensor_bytes": 14496047104,
+    "dtype_histogram": {
+      "BF16": 291
+    },
+    "shards": [
+      {
+        "path": "model-00001-of-00003.safetensors",
+        "file_bytes": 4949453792,
+        "header_bytes": 11224,
+        "header_sha256": "D4F7457E2EFD1872695E4C4251FB9961405AFD4F69BBB9EC6CCA04E295FF9B77",
+        "payload_bytes": 4949442560,
+        "tensor_count": 97,
+        "tensor_bytes": 4949442560,
+        "dtype_histogram": {
+          "BF16": 97
+        },
+        "unreferenced_payload_bytes": 0
+      },
+      {
+        "path": "model-00002-of-00003.safetensors",
+        "file_bytes": 4999819336,
+        "header_bytes": 12352,
+        "header_sha256": "632F84E707B572738FA69EE7C84F01642F074C02DC0360E640C36CFD8505B820",
+        "payload_bytes": 4999806976,
+        "tensor_count": 106,
+        "tensor_bytes": 4999806976,
+        "dtype_histogram": {
+          "BF16": 106
+        },
+        "unreferenced_payload_bytes": 0
+      },
+      {
+        "path": "model-00003-of-00003.safetensors",
+        "file_bytes": 4546807800,
+        "header_bytes": 10224,
+        "header_sha256": "AA878EA418145EE2070C70D716C2DAE274C099C2FF53E47429626A47B2226FF7",
+        "payload_bytes": 4546797568,
+        "tensor_count": 88,
+        "tensor_bytes": 4546797568,
+        "dtype_histogram": {
+          "BF16": 88
+        },
+        "unreferenced_payload_bytes": 0
+      }
+    ],
+    "post_promotion_validator_reproduced": true
+  },
+  "independent_post_promotion_audit": {
+    "status": "go",
+    "full_byte_rehash_utc": "2026-08-30T19:19:22.4552039Z",
+    "independent_header_index_check_utc": "2026-08-30T19:20:38.9761709Z",
+    "exact_membership": true,
+    "file_count": 11,
+    "total_bytes": 14498795238,
+    "lfs_sha256_identities_matched": 4,
+    "git_blob_sha1_identities_matched": 7,
+    "tensor_index_mappings_matched": 291,
+    "tensor_count": 291,
+    "tensor_bytes": 14496047104,
+    "dtype_histogram": {
+      "BF16": 291
+    },
+    "overlap_bytes": 0,
+    "gap_bytes": 0,
+    "unreferenced_payload_bytes": 0,
+    "duplicate_json_keys": 0,
+    "all_safetensors_headers_eight_byte_aligned": true,
+    "reparse_points": 0,
+    "nested_or_extra_files": 0,
+    "binding_manifest_receipt_event_crosslinks_matched": true,
+    "frozen_validator_passed_again_after_promotion": true
+  },
+  "provenance_limitations": {
+    "github_release_immutable": false,
+    "annotated_tag_cryptographically_signed": false,
+    "disposition": "Remote Git object identities and server publication time match; no claim of cryptographic tag signing or immutable GitHub Release configuration is made."
+  },
+  "authorization_boundary": {
+    "source_retrieval_complete": true,
+    "canonical_bf16_conversion_authorized": false,
+    "d4_creation_authorized": false,
+    "target_calibration_authorized": false,
+    "q8_q6_q3_or_staged_endpoints_authorized": false,
+    "next_gate": "complete source/tool/data preparation, obtain Claude execution-input review, and publish execution-input freeze"
+  }
+}
