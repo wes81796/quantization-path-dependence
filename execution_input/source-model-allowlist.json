@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "status": "fixed-before-model-payload-retrieval",
+  "frozen_utc_date": "2026-08-30",
+  "repository": "mistralai/Mistral-7B-v0.3",
+  "revision": "caa1feb0e54d415e2df31207e5f4e273e33509b1",
+  "repository_api": "https://huggingface.co/api/models/mistralai/Mistral-7B-v0.3/revision/caa1feb0e54d415e2df31207e5f4e273e33509b1?blobs=true",
+  "model_card": "https://huggingface.co/mistralai/Mistral-7B-v0.3/blob/caa1feb0e54d415e2df31207e5f4e273e33509b1/README.md",
+  "license": {
+    "spdx": "Apache-2.0",
+    "evidence": [
+      "Hugging Face revision API cardData.license",
+      "README.md YAML model-card metadata"
+    ]
+  },
+  "selected_representation": "three-shard Hugging Face safetensors plus index",
+  "destination": "F:\\quantization-path-dependence\\source\\model\\mistralai--Mistral-7B-v0.3\\caa1feb0e54d415e2df31207e5f4e273e33509b1\\files",
+  "selected_total_bytes": 14498795238,
+  "files": [
+    {
+      "path": "config.json",
+      "role": "model-config-required-by-converter",
+      "expected_bytes": 601,
+      "git_blob_sha1": "9f913dc05d66cfb23c16e3c93b3cc4899813dfa6",
+      "expected_sha256": null
+    },
+    {
+      "path": "generation_config.json",
+      "role": "generation-metadata-read-by-gguf-metadata-loader",
+      "expected_bytes": 116,
+      "git_blob_sha1": "b6bea2642bc3fe80f392111d52af91d1563a8de2",
+      "expected_sha256": null
+    },
+    {
+      "path": "model-00001-of-00003.safetensors",
+      "role": "selected-weight-shard",
+      "expected_bytes": 4949453792,
+      "git_blob_sha1": "9261fc3e77a6e53c3af6847041cc7ee13d63e756",
+      "expected_sha256": "2d7de8eb9bd554cccc999649fd5a3a28a44d09042879d6c1cedd13f59c86f7a8"
+    },
+    {
+      "path": "model-00002-of-00003.safetensors",
+      "role": "selected-weight-shard",
+      "expected_bytes": 4999819336,
+      "git_blob_sha1": "e9e20fb3ad4193fa37bb424e0e2218b9093fc98f",
+      "expected_sha256": "79a5f871a0fbb7919f263d78caff0d4d3b7a1d444552db3011ada70f48fd5ee4"
+    },
+    {
+      "path": "model-00003-of-00003.safetensors",
+      "role": "selected-weight-shard",
+      "expected_bytes": 4546807800,
+      "git_blob_sha1": "6ad0eb74e591289acd8a86cd24a2d4e439aeaa56",
+      "expected_sha256": "ba7ae59358f726f5f5bc5264fd8a3aec907f42e6009d7b22454007d18723616a"
+    },
+    {
+      "path": "model.safetensors.index.json",
+      "role": "selected-weight-index-required-by-converter",
+      "expected_bytes": 23950,
+      "git_blob_sha1": "050e5515d49376fc01e4837d031902c63af98111",
+      "expected_sha256": null
+    },
+    {
+      "path": "README.md",
+      "role": "model-card-and-license-evidence",
+      "expected_bytes": 3580,
+      "git_blob_sha1": "61a50aa48eed669cccd4e2b2183f3c3daf9b81eb",
+      "expected_sha256": null
+    },
+    {
+      "path": "special_tokens_map.json",
+      "role": "independent-special-token-verification",
+      "expected_bytes": 414,
+      "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d",
+      "expected_sha256": null
+    },
+    {
+      "path": "tokenizer_config.json",
+      "role": "tokenizer-config-required-by-converter",
+      "expected_bytes": 136697,
+      "git_blob_sha1": "07992b5eb9617dbdf13bb69b825c45e0da5fddb2",
+      "expected_sha256": null
+    },
+    {
+      "path": "tokenizer.json",
+      "role": "independent-tokenizer-and-postprocessor-verification",
+      "expected_bytes": 1961548,
+      "git_blob_sha1": "8d7d23136b474a3df1182ed829db19984e295ee7",
+      "expected_sha256": null
+    },
+    {
+      "path": "tokenizer.model",
+      "role": "sentencepiece-model-required-by-converter",
+      "expected_bytes": 587404,
+      "git_blob_sha1": "f3b30c02e7f12eb7fbc7e89595b97c43067d73c6",
+      "expected_sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89"
+    }
+  ],
+  "excluded_repository_files": [
+    {
+      "path": "consolidated.safetensors",
+      "reason": "duplicate alternate weight representation prohibited by protocol",
+      "expected_bytes": 14496078512,
+      "expected_sha256": "2ebad29835bed626c419fdcc69e268b01c79bacbca8c8bc5e1124378a89d5275"
+    },
+    {
+      "path": "params.json",
+      "reason": "alternate Mistral-format config not used with the selected Hugging Face representation"
+    },
+    {
+      "path": "tokenizer.model.v3",
+      "reason": "alternate tokenizer filename not used by the pinned Hugging Face conversion path"
+    },
+    {
+      "path": ".gitattributes",
+      "reason": "repository transport metadata, not a scientific input"
+    }
+  ],
+  "retrieval_contract": {
+    "base_url": "https://huggingface.co/mistralai/Mistral-7B-v0.3/resolve/caa1feb0e54d415e2df31207e5f4e273e33509b1",
+    "redirects_allowed": true,
+    "resume_allowed_only_for_same_url_and-attempt": true,
+    "broad_snapshot_download_prohibited": true,
+    "promotion_requires": [
+      "exact allowlist membership",
+      "HTTP success",
+      "expected byte size",
+      "expected LFS SHA-256 where published",
+      "locally computed SHA-256 for every file",
+      "safetensors header/index validation",
+      "no extra file in the promoted source directory"
+    ]
+  },
+  "static_converter_trace": {
+    "llama_cpp_revision": "17252c769a63c1cb650ce98ae309cf4de0da7778",
+    "architecture_route": "MistralForCausalLM -> conversion.llama.LlamaModel",
+    "weight_selection": "model.safetensors.index.json -> three model-*.safetensors shards",
+    "tokenizer_route": "tokenizer.model with tokenizer_config.json and config.json special-token metadata",
+    "metadata_route": "config.json and generation_config.json",
+    "remote_conversion_mode": false
+  }
+}
