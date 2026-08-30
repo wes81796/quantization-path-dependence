@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "status": "source-checkout-verified-build-pending",
+  "repository": "https://github.com/ggml-org/llama.cpp.git",
+  "revision": "17252c769a63c1cb650ce98ae309cf4de0da7778",
+  "git_tree": "d74d2c05d0df17f18bc2daa6f4fb661c0bfe67fb",
+  "parent_commit": "cc83d7b4824f73cfdda4dfbb47ee39804f71b328",
+  "commit_date": "2026-08-29T14:50:13+02:00",
+  "commit_subject": "metal : add remaining fa-vec tunings for M4 Pro (#27915)",
+  "checkout_path": "F:\\quantization-path-dependence\\source\\toolchain\\llama.cpp\\17252c769a63c1cb650ce98ae309cf4de0da7778\\repo",
+  "checkout": {
+    "started_utc": "2026-08-30T18:25:47.4896887Z",
+    "clean_verified_utc": "2026-08-30T18:26:31.9050451Z",
+    "git_version": "git version 2.55.0.windows.3",
+    "clone_mode": "--filter=blob:none --no-checkout",
+    "detached_head": true,
+    "tracked_file_count": 3505,
+    "status_porcelain_line_count": 0,
+    "partial_clone_promisor": true,
+    "partial_clone_filter": "blob:none",
+    "core_longpaths_local": true,
+    "gitmodules_bytes": 0,
+    "submodules": []
+  },
+  "checkout_incident": {
+    "classification": "source-checkout infrastructure repair before build",
+    "description": "The initial Windows checkout reported filename-too-long errors for four deeply nested tools/ui Svelte files while Git returned exit code 0. The resulting four deletions were detected immediately by git status.",
+    "repair": "Set repository-local core.longpaths=true and restore exactly the four missing tracked paths from HEAD.",
+    "post_repair_checks": [
+      "all four files exist",
+      "git status --porcelain is empty",
+      "git diff --binary --exit-code succeeds",
+      "HEAD remains the pinned revision"
+    ],
+    "scientific_source_changed": false
+  },
+  "relevant_files": [
+    {"path": "convert_hf_to_gguf.py", "bytes": 13105, "sha256": "21B70F59D9CFA5F3963BFE9B1C648C16B1FDECA9CFF67778BF776D1137B267B5"},
+    {"path": "conversion/__init__.py", "bytes": 16064, "sha256": "0341741CF3D1313855AF3291286E0245B894BBAA30FEACDBA3A1E98BA5AF582B"},
+    {"path": "conversion/base.py", "bytes": 142836, "sha256": "6D7DC7C4066458C31195CFF190364566D1D95576B0E84C33CD5228DD678D1D9F"},
+    {"path": "conversion/llama.py", "bytes": 21828, "sha256": "B0D145E2DF36563E6A199E42A5A3C1E21B178EB36B7CBC123B77A7CBDB162217"},
+    {"path": "requirements/requirements-convert_hf_to_gguf.txt", "bytes": 205, "sha256": "D3D51500D1EC00B102D53B4CDE29CB36ECFA28199BCDA506B9D807BFA50A39BE"},
+    {"path": "gguf-py/gguf/metadata.py", "bytes": 40049, "sha256": "0601EE50B007BB20B46A07FA7F6AE746924159C574D713B422BAA242F058D320"},
+    {"path": "gguf-py/gguf/vocab.py", "bytes": 43364, "sha256": "34744A689D361B58DDD9C5B7057A275AABCB4056365B4B7F18694628EE177936"},
+    {"path": "gguf-py/gguf/gguf_reader.py", "bytes": 16711, "sha256": "495F86FE509EDDEF80B22E0D861DE14D51CE5DF01C5A584C63DDC302166EDA8B"},
+    {"path": "gguf-py/gguf/quants.py", "bytes": 66324, "sha256": "123B9D5741EDE6CA8A321D7E08D43C8A0BD9FB53EC4F786323F5D9B9A214B4E8"},
+    {"path": "tools/quantize/README.md", "bytes": 12602, "sha256": "941224C118FC07ED0A2C7849637DDDE2B337C2F96D509BEE5AC5AB750E4B792C"},
+    {"path": "tools/quantize/quantize.cpp", "bytes": 28696, "sha256": "4E2C24585F9ADBD97C94CBB56F906DDC83ED60AB82B94A931C52B3569A4BDF9D"},
+    {"path": "src/llama-quant.cpp", "bytes": 65120, "sha256": "C7982921B0E5BC83637D9061C6DABD6406857DBF4FA628A2DF47CDBB7F37BBA7"},
+    {"path": "tools/perplexity/README.md", "bytes": 20175, "sha256": "3808410E588FE33C4DFF736C5EF41DD0F46F43CFFB94A0EF09F8FB7B0CAE1249"},
+    {"path": "tools/perplexity/perplexity.cpp", "bytes": 84337, "sha256": "7552A9CB3CDFB0564C8CCDEDF5772577B9FB39C8300E4E1A20036F7C507C416B"},
+    {"path": "common/arg.cpp", "bytes": 225837, "sha256": "55262CC60300E7B4C5706A5197BB6CC114B6C0FECC6393B861E487E6A14C6E74"},
+    {"path": "ggml/include/gguf.h", "bytes": 11566, "sha256": "4AE33E92CFE908A6068F2C5C9EFE714D3290391AAB0472D5D43EDD6A8B00DB2D"},
+    {"path": "ggml/src/gguf.cpp", "bytes": 59758, "sha256": "87EABFC192C5B8171B06C6558A469CDA971DB763EC1CA954DCEEF92C08EF82BF"},
+    {"path": "CMakeLists.txt", "bytes": 10853, "sha256": "6AC778766597B82BAC302FBFC9413539F4477A546FBA06436B91852FF30EB63D"},
+    {"path": "docs/build.md", "bytes": 38119, "sha256": "B43791A3A4BA5EF0440ED256246DEF0A41AA8660E92F78411F6E020F27EF284B"}
+  ],
+  "source_reference_discrepancy": {
+    "protocol_path": "ggml/docs/gguf.md",
+    "finding": "The path is absent from the pinned tree.",
+    "operational_sources": [
+      "ggml/include/gguf.h",
+      "ggml/src/gguf.cpp",
+      "gguf-py/gguf/gguf_reader.py",
+      "gguf-py/gguf/quants.py"
+    ],
+    "disposition": "Record for Claude's execution-input review; do not change a semantic rule or silently substitute a different revision."
+  },
+  "build": {
+    "status": "pending",
+    "reason": "No compiler, CMake, Ninja, or CUDA toolkit was discoverable on PATH at source-checkout time. Build-environment installation and exact flags must be recorded separately."
+  }
+}
