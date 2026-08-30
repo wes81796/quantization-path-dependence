@@ -1,4 +1,4 @@
-# Design Freeze v1
+# Design Freeze v1.1
 
 ## Frozen design
 
@@ -8,9 +8,11 @@
 - Protocol SHA-256: `7009A3A80C3389ABC491EC1B487C563EE491BBD9EB1981C59E611A482D96A933`
 - Freeze date: 2026-08-30
 - Anchor repository: `wes81796/quantization-path-dependence` (private)
-- Anchor tag and Release: `design-freeze-v1`
+- Authoritative anchor tag and Release: `design-freeze-v1.1`
 
-The `-draft` suffix records the document's pre-freeze drafting lineage. This signed and anchored record is what changes its status: the exact bytes identified above are the approved, frozen v1 design.
+The `-draft` suffix records the document's pre-freeze drafting lineage. This approved and anchored record is what changes its status: the exact bytes identified above are the approved, frozen v1 design.
+
+Record v1.1 is a governance-wording correction only. Independent verification confirmed that `design-freeze-v1` was an annotated but cryptographically unsigned tag, so “signed” was replaced by “approved” and no protocol byte or design choice changed. The original commit, tag, and Release remain preserved as historical evidence.
 
 ## Authority and prerequisite disposition
 
